@@ -1,0 +1,431 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    
+}
+body{
+    background-color:black;
+    color: white;
+}
+.hide2{
+    background-color: rgb(220, 195, 195);
+}
+.hide3{
+background-color: rgb(247, 247, 132);
+}
+.hide1{
+    background-color: #64c938;
+}
+#main-heading{
+    font-size: 2.5rem;
+    background-color:#080201 ;  
+    height: 5rem;
+    line-height: 5rem;  
+}
+
+
+.msg-container{
+    margin-top: 3rem;
+   
+}
+
+
+#msg{
+    background-color: #08090a;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+    
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13rem;
+    margin-top: 5rem;
+}
+
+.images{
+    height: 165px;
+    width: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.img-msg{
+     font-size: 2rem;
+    
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13rem;
+    margin-top: 5rem;
+}
+
+.options{
+    width: 8rem;
+    font-size: 2rem;
+    background-color:rgb(90, 61, 61);
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+}
+#rock{
+    background-color: rgb(205, 34, 34);
+}
+
+#paper{
+    background-color: rgb(226, 226, 55);
+}
+#scissors{
+    background-color: rgb(35, 107, 240);
+    width: 9rem;
+}
+
+.options:hover{
+ border: 0.2rem solid black;
+
+}
+
+.score-board{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;  
+    gap: 15rem;
+    margin-top: 5rem;
+   
+}
+
+#user-score , #comp-score{
+font-size: 4rem;
+color: rgb(195, 6, 6);
+}
+
+
+#user,#comp{
+    font-weight: bold;
+}
+
+.images2{
+    height: 165px;
+    width: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    animation-name:image ;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes image {
+   
+   0% { transform: translateY(0px) ; }
+   50% { transform: translateY(-20px); }
+   100% { transform: translateY(0px); }
+}
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+      .score-board {
+       
+        gap: 14rem;
+      
+    }
+.img{
+    gap: 12rem;
+}
+    .images, .images2 {
+        height: 120px;
+        width: 120px;
+    }
+
+    .option{
+        gap: 5rem;
+    }
+    .options {
+        width: 7rem;
+        font-size: 1.5rem;
+       
+    }
+
+    #scissors {
+        width: 8rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 3.5rem;
+    }
+
+    #main-heading {
+        font-size: 2rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+        padding: 0.7rem;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .score-board {
+       
+        gap: 8rem;
+      
+    }
+    .img{
+    gap: 6rem;
+    }
+
+    .option{
+        gap: 2rem;
+    }
+
+    .images, .images2 {
+        height: 120px;
+        width: 120px;
+    }
+
+
+    .options {
+        font-size: 1.2rem;
+        width: 6rem;
+    }
+    #comp,#user{
+        font-size: 1.5rem;
+    }
+
+    #scissors {
+        width: 7rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 2.5rem;
+    }
+
+    #main-heading {
+        font-size: 1.7rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
+        
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .option{
+        gap: 1rem;
+    }
+    .img{
+        gap: 3rem;
+    }
+    #comp,#user{
+        font-size: 1.5rem;
+    }
+    .score-board {
+       
+        gap: 6rem;
+      
+    }
+ #userimg,#compimg{
+        height: 150px;
+        width: 150px;
+    }
+    
+    .options {
+        font-size: 1.2rem;
+        width: 5rem;
+    }
+
+    #scissors {
+        width: 6rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 2.5rem;
+    }
+
+    #main-heading {
+        font-size: 1.5rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .score-board {
+       
+        gap: 18rem;
+       font-size: 2.5rem;
+      
+    }
+.img{
+    gap: 18rem;
+}
+#userimg,#compimg{
+        height: 230px;
+        width: 230px;
+    }
+    .images, .images2 {
+        height: 250px;
+        width: 260px;
+    }
+
+    .option{
+        gap: 9rem;
+    }
+    .options {
+        width: 10rem;
+        font-size: 2.4rem;
+       
+    }
+
+    #scissors {
+        width: 11rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 4rem;
+    }
+
+    #main-heading {
+        font-size: 3rem;
+        height: 6rem;
+        line-height: 6rem;
+    }
+
+    #msg {
+        font-size: 3rem;
+        padding: 0.9rem;
+    }
+}
+/* 
+
+@media (min-width: 1440px){
+    .score-board {
+       gap: 30rem;
+       font-size: 4rem;
+       margin-top: 9rem;
+      
+    }
+.img{
+    gap: 30rem;
+}
+#userimg,#compimg{
+        height: 270px;
+        width: 280px;
+    }
+    .images, .images2 {
+        height: 300px;
+        width: 300px;
+    }
+
+    .option{
+        gap: 10rem;
+        margin: rem;
+    }
+    .options {
+        width: 11rem;
+        font-size: 3rem;
+       
+    }
+
+    #scissors {
+        width: 14rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 4rem;
+    }
+
+    #main-heading {
+        font-size: 4rem;
+        height: 8rem;
+        line-height: 8rem;
+    }
+
+    #msg {
+        font-size: 3.5rem;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 2560px){
+    .score-board {
+       
+        gap: 50rem;
+       font-size: 8rem;
+       margin-top: 10rem;
+      
+    }
+.img{
+    gap: 50rem;
+}
+#userimg,#compimg{
+        height: 480px;
+        width: 490px;
+    }
+    .images, .images2 {
+        height: 500px;
+        width: 520px;
+       
+    }
+
+    .option{
+        gap: 20rem;
+        margin-top: 13rem;
+    }
+    .options {
+        width: 18rem;
+        font-size: 5rem;
+        border-radius: 2rem;
+       
+    }
+
+    #scissors {
+        width: 22rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 9rem;
+    }
+
+    #main-heading {
+        font-size: 7rem;
+        height: 14rem;
+        line-height: 14rem;
+    }
+
+    #msg {
+        font-size: 6rem;
+        padding: 1.5rem;
+    }
+}
+
+ */
